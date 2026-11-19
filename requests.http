@@ -1,0 +1,31 @@
+### usei a extensão REST Client do VS Code pra testar na mão
+
+GET http://localhost:3000/livros
+
+###
+
+GET http://localhost:3000/livros?lido=false
+
+###
+
+POST http://localhost:3000/livros
+Content-Type: application/json
+
+{
+  "titulo": "Vidas Secas",
+  "autor": "Graciliano Ramos",
+  "ano": 1938
+}
+
+###
+
+PATCH http://localhost:3000/livros/1
+Content-Type: application/json
+
+{
+  "lido": true
+}
+
+###
+
+DELETE http://localhost:3000/livros/1
